@@ -1,0 +1,12 @@
+footer .reveal {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform, opacity;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+  }
+  
+  footer .reveal.show {
+    transform: translateY(0);
+    opacity: 1;
+  }

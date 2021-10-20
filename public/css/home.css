@@ -1,0 +1,41 @@
+
+  body { 
+    background: url('/storage/images/fons.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .principal{
+      position: absolute;
+      top: 10rem;
+      left:15%;
+  }
+  .grid-container {
+    width: 60rem;
+    display: grid;
+    grid-template-columns: 3fr;
+    padding: 10px;
+  }
+  .grid-item {
+    color: black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-size: 55px;
+  }
+
+  .contenidor-2 {
+    height:20rem;;
+    width: 80rem;
+    display: grid;
+    background: #50D7D7;
+    grid-template-columns: 3fr;
+    padding: 10px;
+  }
+  .contenidor-2 .grid-item {
+    color: black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
