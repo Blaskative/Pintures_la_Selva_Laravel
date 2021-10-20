@@ -20,3 +20,7 @@ Route::get('/', HomeController::class)->name('/');
 
 Route::get('galeria', [GaleriaController::class, 'index'])->name('galeria');
 Route::get('contacte', [ContactController::class, 'index'])->name('contacte');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
