@@ -13,7 +13,7 @@ class CreateGaleriasApartatTable extends Migration
      */
     public function up()
     {
-        Schema::create('galerias_apartat', function (Blueprint $table) {
+        Schema::create('galerias', function (Blueprint $table) {
             $table->id();
             $table->string('ruta');
             $table->foreignId('apartat_id')->references('id')->on('apartats');
