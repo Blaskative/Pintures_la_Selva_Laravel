@@ -23,6 +23,9 @@
     <script src="https://kit.fontawesome.com/9739f101ba.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/js/footer.js"></script>
+
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     
 </head>
 <body>
