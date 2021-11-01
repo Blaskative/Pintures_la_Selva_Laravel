@@ -16,6 +16,7 @@ class CreateGaleriasApartatTable extends Migration
         Schema::create('galerias', function (Blueprint $table) {
             $table->id();
             $table->string('ruta');
+            $table->string('titol');
             $table->foreignId('apartat_id')->references('id')->on('apartats');
             $table->timestamps();
         });

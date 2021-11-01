@@ -264,7 +264,7 @@ return [
                 [
                         'text'       => 'Galeria',
                         'icon_color' => 'cyan',
-                        'url'        => '#',
+                        'route'  => 'admin.galeria.index'
                     
                 ],
             
