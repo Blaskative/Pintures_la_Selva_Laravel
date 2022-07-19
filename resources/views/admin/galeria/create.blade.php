@@ -16,12 +16,12 @@
 @stop
 
 @section('css')
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="{{asset('css/livewire/upload.css')}}">
+
+<link rel="stylesheet" href="{{asset('css/upload.css')}}">
 @stop
 
 @section('js')
 @livewireScripts
-    <script> console.log('Admin!'); </script>
+<script src="/js/upload.js"></script>
  
 @stop

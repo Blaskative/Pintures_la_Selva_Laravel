@@ -29,10 +29,24 @@
                     <label style="color: white">Title</label>
                 </div>
                 <div class="col-md-6 d-flex justify-content-first">
-                    <input type="text"  wire:model="title" name="title" placeholder="Posali un títol a la imatge">
-                    <br> @error('title') <span class="text-danger">{{$message}}</span>@enderror
+                    <input type="text"  wire:model="titol" name="titol" placeholder="Posali un títol a la imatge">
+                    <br> @error('titol') <span class="text-danger">{{$message}}</span>@enderror
                 </div>
-              		
+                <div class="col-md-6 d-flex justify-content-end">
+                    <label style="color: white">Descripció</label>
+                </div>
+                <div class="col-md-6 d-flex justify-content-first">
+                  
+                    <select class="form-control" wire:model="apartat" style="width: 100%">
+                            <option value="1">Catalegs</option>
+                            <option value="2">Façanes</option>
+                            <option value="3">Interiors de Cases</option>
+                            <option value="4">Cel Oberts</option>
+                            <option value="5">Locals</option>
+                            <option value="6">Obra Nova</option>
+                    </select>
+                    <br> @error('apartat') <span class="text-danger">{{$message}}</span>@enderror
+                </div>			
                 <div class="col-md-12">
                     <input type="submit" class="btn btn-danger" name="btnAddMore" value="Enviar"/>
                 </div>

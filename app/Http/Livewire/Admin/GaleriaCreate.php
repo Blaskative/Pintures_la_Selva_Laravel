@@ -9,11 +9,12 @@ use App\Models\Galeria;
 use Illuminate\Support\Facades\DB;
 
 class GaleriaCreate extends Component{
+
 use WithFileUploads;
     
-
-public $title;
-public $description;
+protected $paginationTheme = 'bootstrap';
+public $titol;
+public $apartat;
 public $photo;
 
 public function render(){
@@ -21,14 +22,14 @@ public function render(){
 }
 public function crear(){
         $this->validate([
-            'title' => 'required',
-            'description' => 'required',
+            'titol' => 'required',
+            'apartat' => 'required',
             'photo' => 'image|max:2000',
         ]);
-        $this->photo->store('galeria','public');
+        $this->photo->store('images/galeria','public');
        
      
-   $insert=  DB::table('galerias')->insert(['title'=>$this->title,'image_path'=>$this->photo->hashName(),'description'=>$this->description]);
+   $insert=  DB::table('galerias')->insert(['titol'=>$this->titol,'ruta'=>'/storage/images/galeria/'.$this->photo->hashName(),'apartat_id'=>$this->apartat]);
    if($insert){
     return redirect('/admin/galeria');
    }else{
